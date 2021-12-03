@@ -37,6 +37,5 @@ def part_two(input):
 
 input = helpers.load_puzzle_input(2)
 
-
 print('Part one result: %s'%(helpers.run_and_time(part_one, input)))
 print('Part two result: %s'%(helpers.run_and_time(part_two, input)))
