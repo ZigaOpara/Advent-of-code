@@ -15,9 +15,9 @@ def load_puzzle_input(day):
     return r_list
 
 
-def run_and_time(method, args):
+def run_and_time(method, *args):
     start_time = time.perf_counter_ns()
-    result = method(args)
+    result = method(*args)
     end_time = time.perf_counter_ns()
     execution_time = (end_time - start_time) / 1000000
     return('%s, completed in %fms'%(result, execution_time))

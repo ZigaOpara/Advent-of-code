@@ -28,25 +28,31 @@ def part_one(numbers, boards):
 
 
 def part_two(numbers, boards):
-    board_indexes = np.arange(len(boards))
+    last_number = 0
+    board_indexes = list(np.arange(len(boards)))
+    stop_run = False
     for number in numbers:
+        if stop_run:
+            break
         for index, board in enumerate(boards):
-            if board is None:
+            if index not in board_indexes:
                 continue
             board[board == number] = np.nan
             if check_board(board):
-                board_indexes = board_indexes[board_indexes != index]
                 if len(board_indexes) == 1:
+                    last_number = number
+                    stop_run = True
                     break
+                board_indexes.remove(index)
 
     board = boards[board_indexes[0]]
-    unmarked_sum = np.nansum(boards[0])
-    return int(unmarked_sum * number)
+    unmarked_sum = np.nansum(board)
+    return int(unmarked_sum * last_number)
 
 
 raw_input = helpers.load_puzzle_raw(4)
 input = list(raw_input.text.split("\n\n"))
 input.pop()
 numbers, boards = parse_input(input)
-print(part_one(numbers, boards))
-print(part_two(numbers, boards))
+print('Part one result: %s'%(helpers.run_and_time(part_one, numbers, boards)))
+print('Part two result: %s'%(helpers.run_and_time(part_two, numbers, boards)))
