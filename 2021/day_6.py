@@ -39,7 +39,7 @@ def part_two(input):
     return get_n_of_fish_in_days(input, 256)
 
 
-input = helpers.load_puzzle_input(6)
+input = helpers.load_puzzle_input(2021, 6)
 input = list(map(int, list(input[0].split(","))))
 print('Part one result: %s' % (helpers.run_and_time(part_one, input)))
 print('Part two result: %s' % (helpers.run_and_time(part_two, input)))

@@ -31,7 +31,7 @@ def part_two(input):
 
 
 
-input = helpers.load_puzzle_input(7)
+input = helpers.load_puzzle_input(2021, 7)
 input = list(map(int, list(input[0].split(","))))
 print('Part one result: %s' % (helpers.run_and_time(part_one, input)))
 print('Part two result: %s' % (helpers.run_and_time(part_two, input)))

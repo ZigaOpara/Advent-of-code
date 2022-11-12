@@ -9,7 +9,7 @@ def part_one(input):
 
 
 
-input = helpers.load_puzzle_input(8)
+input = helpers.load_puzzle_input(2021, 8)
 input = list(map(lambda x: x.split(" | "), input))
 input = list(map(lambda x: list(map(lambda y: y.split(" "), x)), input))
 print('Part one result: %s' % (helpers.run_and_time(part_one, input)))

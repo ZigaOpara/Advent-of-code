@@ -52,7 +52,7 @@ def part_two(input):
     return result
 
 
-input = helpers.load_puzzle_input(3)
+input = helpers.load_puzzle_input(2021, 3)
 
 print('Part one result: %s' % (helpers.run_and_time(part_one, input)))
 print('Part two result: %s' % (helpers.run_and_time(part_two, input)))

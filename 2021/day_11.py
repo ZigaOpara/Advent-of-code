@@ -49,7 +49,7 @@ def part_two(input):
     return
 
 
-input = helpers.load_puzzle_input(11)
+input = helpers.load_puzzle_input(2021, 11)
 input = list(map(lambda x: list(map(int, list(x))), input))
 test_input = [
     [5,4,8,3,1,4,3,2,2,3],

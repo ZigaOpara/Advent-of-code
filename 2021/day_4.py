@@ -50,7 +50,7 @@ def part_two(numbers, boards):
     return int(unmarked_sum * last_number)
 
 
-raw_input = helpers.load_puzzle_raw(4)
+raw_input = helpers.load_puzzle_raw(2021, 4)
 input = list(raw_input.text.split("\n\n"))
 input.pop()
 numbers, boards = parse_input(input)

@@ -31,7 +31,7 @@ def part_two(input):
     print(paths)
 
 
-input = helpers.load_puzzle_input(12)
+input = helpers.load_puzzle_input(2021, 12)
 input = list(map(lambda x: x.split('-'), input))
 input_parsed = {}
 for pair in input:

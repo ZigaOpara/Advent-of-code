@@ -87,7 +87,7 @@ def part_two(input):
     return result
 
 
-input = helpers.load_puzzle_input(10)
+input = helpers.load_puzzle_input(2021, 10)
 test_input = [
     '[({(<(())[]>[[{[]{<()<>>',
     '[(()[<>])]({[<{<<[]>>(',

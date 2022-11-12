@@ -28,7 +28,7 @@ def part_two(template, rules):
     return counted[0][1] - counted[-1][1]
 
 
-input = helpers.load_puzzle_input(14)
+input = helpers.load_puzzle_input(2021, 14)
 template = input[0]
 rules = input[2:]
 rules = list(map(lambda x: x.split(' -> '), rules))

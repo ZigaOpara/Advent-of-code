@@ -34,7 +34,7 @@ def part_two(dots, folds):
     visualize(dots)
 
 
-r = helpers.load_puzzle_raw(13)
+r = helpers.load_puzzle_raw(2021, 13)
 input = list(r.text.split("\n\n"))
 dots = input[0].split('\n')
 dots = list(map(lambda x: list(map(int, x.split(','))), dots))

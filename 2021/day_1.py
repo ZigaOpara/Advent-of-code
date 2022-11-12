@@ -23,7 +23,7 @@ def part_two(input):
     return n_of_increases
 
 
-input = helpers.load_puzzle_input(1)
+input = helpers.load_puzzle_input(2021, 1)
 parsed = list(map(int, input))
 print('Part one result: %s' % (helpers.run_and_time(part_one, parsed)))
 print('Part two result: %s' % (helpers.run_and_time(part_two, parsed)))
