@@ -47,5 +47,5 @@ def part_two(input):
 input = helpers.load_puzzle_input(5)
 input = list(map(lambda x: x.split(' -> '), input))
 input = np.array(list(map(lambda x: list(map(lambda y: list(map(int, y.split(','))), x)), input)))
-print('Part one result: %s'%(helpers.run_and_time(part_one, input)))
-print('Part two result: %s'%(helpers.run_and_time(part_two, input)))
+print('Part one result: %s' % (helpers.run_and_time(part_one, input)))
+print('Part two result: %s' % (helpers.run_and_time(part_two, input)))

@@ -70,5 +70,5 @@ test_folds = [
     ['x', 5]
 ]
 
-print('Part one result: %s'%(helpers.run_and_time(part_one, dots, folds)))
-print('Part two result: %s'%(helpers.run_and_time(part_two, dots, folds)))
+print('Part one result: %s' % (helpers.run_and_time(part_one, dots, folds)))
+print('Part two result: %s' % (helpers.run_and_time(part_two, dots, folds)))

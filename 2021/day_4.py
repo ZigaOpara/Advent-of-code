@@ -1,7 +1,7 @@
 import helpers
 import numpy as np
 import re
-from itertools import filterfalse
+
 
 def parse_input(input):
     numbers = list(map(int, list(input[0].split(','))))
@@ -54,5 +54,5 @@ raw_input = helpers.load_puzzle_raw(4)
 input = list(raw_input.text.split("\n\n"))
 input.pop()
 numbers, boards = parse_input(input)
-print('Part one result: %s'%(helpers.run_and_time(part_one, numbers, boards)))
-print('Part two result: %s'%(helpers.run_and_time(part_two, numbers, boards)))
+print('Part one result: %s' % (helpers.run_and_time(part_one, numbers, boards)))
+print('Part two result: %s' % (helpers.run_and_time(part_two, numbers, boards)))

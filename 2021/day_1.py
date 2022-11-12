@@ -25,5 +25,5 @@ def part_two(input):
 
 input = helpers.load_puzzle_input(1)
 parsed = list(map(int, input))
-print('Part one result: %s'%(helpers.run_and_time(part_one, parsed)))
-print('Part two result: %s'%(helpers.run_and_time(part_two, parsed)))
+print('Part one result: %s' % (helpers.run_and_time(part_one, parsed)))
+print('Part two result: %s' % (helpers.run_and_time(part_two, parsed)))

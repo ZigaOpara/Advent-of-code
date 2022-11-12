@@ -62,5 +62,5 @@ test_input_2 = {
     'sa': ['kj']
 }
 
-print('Part one result: %s'%(helpers.run_and_time(part_one, input_parsed)))
-print('Part two result: %s'%(helpers.run_and_time(part_two, input_parsed)))
+print('Part one result: %s' % (helpers.run_and_time(part_one, input_parsed)))
+print('Part two result: %s' % (helpers.run_and_time(part_two, input_parsed)))

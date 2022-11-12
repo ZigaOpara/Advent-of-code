@@ -1,5 +1,5 @@
 import helpers
-import numpy
+
 
 def expect(opening):
     if opening == '{':
@@ -100,5 +100,5 @@ test_input = [
     '<{([([[(<>()){}]>(<<{{',
     '<{([{{}}[<[[[<>{}]]]>[]]'
 ]
-print('Part one result: %s'%(helpers.run_and_time(part_one, input)))
-print('Part two result: %s'%(helpers.run_and_time(part_two, input)))
+print('Part one result: %s' % (helpers.run_and_time(part_one, input)))
+print('Part two result: %s' % (helpers.run_and_time(part_two, input)))

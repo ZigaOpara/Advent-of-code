@@ -70,5 +70,5 @@ test_input_2 = [
     [1,9,9,9,1],
     [1,1,1,1,1],
 ]
-print('Part one result: %s'%(helpers.run_and_time(part_one, input)))
-print('Part two result: %s'%(helpers.run_and_time(part_two, input)))
+print('Part one result: %s' % (helpers.run_and_time(part_one, input)))
+print('Part two result: %s' % (helpers.run_and_time(part_two, input)))

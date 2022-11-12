@@ -8,15 +8,9 @@ def part_one(input):
     return result
 
 
-def part_two(input):
-    for line in input:
-        
-    return
-
-
 
 input = helpers.load_puzzle_input(8)
 input = list(map(lambda x: x.split(" | "), input))
 input = list(map(lambda x: list(map(lambda y: y.split(" "), x)), input))
-print('Part one result: %s'%(helpers.run_and_time(part_one, input)))
+print('Part one result: %s' % (helpers.run_and_time(part_one, input)))
 # print('Part two result: %s'%(helpers.run_and_time(part_two, input)))
