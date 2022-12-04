@@ -23,12 +23,12 @@ def create_paths(input, max_occurrences):
 
 def part_one(input):
     paths = create_paths(input, 0)
-    print(paths)
+    return paths
 
 
 def part_two(input):
     paths = create_paths(input, 2)
-    print(paths)
+    return paths
 
 
 input = helpers.load_puzzle_input(2021, 12)
