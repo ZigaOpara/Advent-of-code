@@ -1,4 +1,5 @@
 import os
+import ssl
 import time
 import typing
 import operator
@@ -10,8 +11,8 @@ import requests
 def load_puzzle_raw(year: int, day: int) -> requests.Response:
     url = 'https://adventofcode.com/{year}/day/{day}/input'.format(year=year, day=day)
     cookies = dict(
-        session='53616c7465645f5f79932d8557876ba0215a35ed4a897a7646fee7f40a4d98f1e58e3f331122374b4d2242ed502a8ada00932ccda04ed34e71c268688d2730d3')
-    r = requests.get(url, cookies=cookies)
+        session='53616c7465645f5fc5f78a4442372b3832b712b78ba760c05436061eb841a34633f73ad7be2b8ce6ad2abeb171173d9f3c496a7a00ff81a90aae023606026009')
+    r = requests.get(url, cookies=cookies, verify=False)
     return r
 
 
