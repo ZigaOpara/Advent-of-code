@@ -161,7 +161,6 @@ def part_two(puzzle_input):
 
 
 loaded_puzzle_input = helpers.load_puzzle_input(2023, 7)
-# loaded_puzzle_input = helpers.load_test_puzzle_input()
 parsed = {hand[0]: int(hand[1]) for hand in list(map(lambda x: x.split(' '), loaded_puzzle_input))}
-# print('Part one result: %s' % (helpers.run_and_time(part_one, parsed)))
+print('Part one result: %s' % (helpers.run_and_time(part_one, parsed)))
 print('Part two result: %s' % (helpers.run_and_time(part_two, parsed)))
